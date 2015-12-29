@@ -29,7 +29,6 @@
                  [org.immutant/web "2.1.1" :exclusions [ch.qos.logback/logback-classic]]]
 
   :min-lein-version "2.0.0"
-  :uberjar-name "site.jar"
   :jvm-opts ["-server"]
   :resource-paths ["resources"]
 
