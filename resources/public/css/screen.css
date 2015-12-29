@@ -1,0 +1,97 @@
+body {
+  height: 100%;
+  padding: 60px 100px;
+  font: 14px 'Calluna', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #FFF;
+  margin: 0 auto;
+}
+
+header {
+  margin: 48px auto;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Calluna', serif;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  font-family: 'Calluna', serif;
+  font-size: 18px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 64px 0 64px 0;
+}
+
+.pagination {
+  font-family: 'Calluna', serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin: 100px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.pagination a:link {
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination a:hover {
+  text-decoration: none;
+  color: darkred;
+}
+
+.pagination a:active {
+  text-decoration: none;
+  color: darkred;
+}
+
+.pagination__link {
+  margin: 50px 200px;
+  text-align: center;
+  color: gainsboro;
+}
+
+.pagination__prev::before {
+  content: '«';
+  padding: 0 1rem;
+}
+
+.pagination__next::after {
+  content: '»';
+  padding: 0 1rem;
+}
+
+.footer {
+  margin: 24px auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.footer p {
+  font-family: 'Calluna', serif;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+  margin: 75px 0 0 0;
+}

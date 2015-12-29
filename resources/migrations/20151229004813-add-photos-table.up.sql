@@ -1,0 +1,5 @@
+CREATE TABLE photos
+(id VARCHAR(20) PRIMARY KEY,
+ description VARCHAR(1000),
+ url VARCHAR(500),
+);

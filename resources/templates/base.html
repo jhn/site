@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Surely You're Joking!</title>
+    <script src="//use.typekit.net/pyx1fwb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    <header class="header">
+      <h1><a href="/">Surely You're Joking!</a></h1>
+      <h2>Photography by Johan Mena</h2>
+    </header>
+
+    <div class="photo-set">
+      {% for item in photos %}
+      <img src="{{item.url}}" alt="" class="photo">
+      {% endfor %}
+    </div>
+
+    <nav class="pagination">
+      {% if prev-page > 0 %}
+      <a class="pagination__link pagination__prev" href="/photos/{{prev-page}}"></a>
+      {% else %}
+      <span class="pagination__link pagination__prev"></span>
+      {% endif %}
+      {% if next-page > 0 %}
+      <a class="pagination__link pagination__next" href="/photos/{{next-page}}"></a>
+      {% else %}
+      <span class="pagination__link pagination__next"></span>
+      {% endif %}
+    </nav>
+
+    <!-- scripts and styles -->
+    {% style "/css/screen.css" %}
+
+    <footer class="footer">
+      <p>&copy; 2015 Johan Mena</p>
+    </footer>
+  </body>
+</html>
+
